@@ -26,16 +26,16 @@ a{
     text-decoration: none;
 }
 
-/* Cacher la scrollbar sur les navigateurs modernes */
+
 body {
-    overflow: auto; /* Permet le scroll */
+    overflow: auto; 
 }
 
 body::-webkit-scrollbar {
-    display: none; /* Chrome, Safari et Edge */
+    display: none;
 }
 
-/* Transition de taille et border-radius avec maintien des animations existantes */
+
 body.screen-1920x1080 .box-1 {
     width: 40vw;
     height: 75vh;
@@ -46,7 +46,7 @@ body.screen-1920x1080 .box-1 {
 
 body.screen-1920x1080 .box-1:hover {
     border-radius: 200px;
-    transition: border-radius 1.5s ease; /* Transition spécifique pour l'hover */
+    transition: border-radius 1.5s ease; 
 }
 
 body.screen-1920x1080 .box-1:hover .latest-release {
@@ -102,37 +102,37 @@ body.screen-1920x1080 .box-pwg1 p {
 }
 
 body.screen-1920x1080 .box-pwg1 .seemore {
-    font-size: 65px;  /* 75% de 80px */
+    font-size: 65px; 
     transition: opacity 1s;
 }
 
 body.screen-1920x1080 .box-1 .fleche {
-    font-size: 30.5px;  /* 75% de 14px */
+    font-size: 30.5px;  
     left: 20vw;
     top: 35vh;
     transition: 0s;
 }
 
 
-/* Page initiale cachée */
+
 body.page-transition {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
 
-/* Lors de la page complètement chargée, on rend le contenu visible */
+
 body.page-loaded {
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
 }
 
-/* Lors du changement de page, appliquer le fade-out */
+
 body.fade-out {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
 
-/* Lors de l'animation fade-in */
+
 body.fade-in {
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
