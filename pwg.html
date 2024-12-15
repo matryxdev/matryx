@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Matryx | Accueil</title>
+</head>
+<body class="page-transition">
+    <header>
+        <div class="box">
+            <a href="home.html" class="page-link"><h1 class="titre">
+                MATRYX
+            </h1>
+        </a>
+        </div>
+    </header>
+    <div class="box-body">
+        <h1 class="petit-titre2">Matryx PasswordGen - v0.1</h1>
+        <div class="box-pwg">
+            <div class="box-pwg1">
+                <h1 class="seemore">
+                    SEE MORE
+                </h1>
+                <p>
+                    <span class="yellow">Matryx PasswordGen</span> is a simple tool to generate secure passwords quickly.<br>
+                     Whether you need multiple passwords or just one strong password, this tool is perfect for you. <br><br><br>
+
+                     <span class="yellow">Key Features:</span><br><br>
+                    
+                    Generate Multiple Passwords: Customizable quantity and length.<br>
+                    Enhanced Security: Passwords include lowercase letters, numbers, and uppercase letters.<br>
+                    Colorful Interface: A pleasant command-line interface using colorama.<br>
+                    Customization: Choose the length (minimum 3 characters).<br><br><br>
+                    <span class="yellow">How It Works:</span><br><br>
+                    
+                    Enter the number of passwords.<br>
+                    Select the desired length for each.<br>
+                    The generator creates secure passwords.<br>
+                    Passwords are displayed one by one.<br><br><br>
+                    <span class="yellow">Matryx PasswordGen - v0.1</span> is ideal for anyone needing secure and unique passwords.
+                </p>
+                <a href="logiciels/Matryx PasswordGen - v0.1.exe" download class="download">Download</a>
+
+            </div>
+            <div class="box-pwg-image">
+
+
+
+            </div>
+            
+        </div>
+
+    </div>
+    <script>
+        // Quand la page est complètement chargée, ajouter l'animation fade-in
+        window.addEventListener('load', function () {
+            document.body.classList.remove('page-transition');  // Supprimer la classe de transition initiale
+            document.body.classList.add('page-loaded');  // Appliquer fade-in après le chargement complet
+        });
+
+        // Fonction pour animer avant de changer de page
+        const pageLinks = document.querySelectorAll('.page-link');
+
+        pageLinks.forEach(link => {
+            link.addEventListener('click', function (event) {
+                event.preventDefault(); // Empêche la navigation immédiate
+                document.body.classList.remove('page-loaded');  // Enlever fade-in
+                document.body.classList.add('fade-out');  // Appliquer fade-out
+                
+                // Attendre que l'animation se termine avant de rediriger
+                setTimeout(() => {
+                    window.location.href = link.href; // Rediriger après l'animation
+                }, 500); // 500ms correspond à la durée de l'animation fade-out
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+    // Détecter la résolution de l'écran physique
+    if (screen.width === 1920 && screen.height === 1080) {
+        // Ajouter une classe spécifique au body
+        document.body.classList.add("screen-1920x1080");
+    }
+});
+
+    </script>
+    
+    
+    <footer class="footer"><p>Matryx - 2024</p></footer>
+</body>
+</html>

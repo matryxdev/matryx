@@ -1,0 +1,476 @@
+@font-face {
+    font-family: matryx;
+    src: url(matryx.ttf);
+}
+
+@font-face {
+    font-family: matryx2;
+    src: url(Super\ Shiny.ttf);
+}
+
+@font-face {
+    font-family: matryx3;
+    src: url(Storm\ Gust.ttf);
+}
+@font-face {
+    font-family: matryx4;
+    src: url(LEMONMILK-Bold.otf);
+}
+
+::selection{
+    color: black;
+    background-color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Cacher la scrollbar sur les navigateurs modernes */
+body {
+    overflow: auto; /* Permet le scroll */
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari et Edge */
+}
+
+/* Transition de taille et border-radius avec maintien des animations existantes */
+body.screen-1920x1080 .box-1 {
+    width: 40vw;
+    height: 75vh;
+    transition: width 0.5s ease, height 0.5s ease, border-radius 1.5s ease;
+}
+
+
+
+body.screen-1920x1080 .box-1:hover {
+    border-radius: 200px;
+    transition: border-radius 1.5s ease; /* Transition spécifique pour l'hover */
+}
+
+body.screen-1920x1080 .box-1:hover .latest-release {
+    transition: color 1.5s;
+    color: yellow;
+}
+
+body.screen-1920x1080 .box-1:hover .fleche {
+    transition: opacity 1.5s;
+
+}
+body.screen-1920x1080 .box-2:hover,
+body.screen-1920x1080 .box-3:hover,
+body.screen-1920x1080 .box-4:hover {
+    transition: border-radius 2s;
+
+}
+
+body.screen-1920x1080 .box-1 .latest-release {
+    font-size: 30.5px;
+    top: 22.5vh;
+    left: 10vw;
+    transition: font-size 0.5s ease, top 0.5s ease, left 0.5s ease;
+}
+
+body.screen-1920x1080 .box-1 .fleche {
+    font-size: 30.5px;
+    left: 15vw;
+    top: 35vh;
+    transition: font-size 0.5s ease, left 0.5s ease, top 0.5s ease;
+}
+
+body.screen-1920x1080 .box-1 a {
+    font-size: 10.5px;
+    left: 15vw;
+    transition: font-size 0.5s ease, left 0.5s ease;
+}
+
+body.screen-1920x1080 .footer p {
+    font-size: 12px;
+    transition: font-size 0.5s ease;
+}
+
+body.screen-1920x1080 .petit-titre, 
+body.screen-1920x1080 .petit-titre2 {
+    font-size: 30px;
+    transition: font-size 0.5s ease;
+}
+
+body.screen-1920x1080 .box-pwg1 p {
+    font-size: 12.5px;
+    transition: opacity 1.5s;
+}
+
+body.screen-1920x1080 .box-pwg1 .seemore {
+    font-size: 65px;  /* 75% de 80px */
+    transition: opacity 1s;
+}
+
+body.screen-1920x1080 .box-1 .fleche {
+    font-size: 30.5px;  /* 75% de 14px */
+    left: 20vw;
+    top: 35vh;
+    transition: 0s;
+}
+
+
+/* Page initiale cachée */
+body.page-transition {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Lors de la page complètement chargée, on rend le contenu visible */
+body.page-loaded {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Lors du changement de page, appliquer le fade-out */
+body.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Lors de l'animation fade-in */
+body.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+
+.box-body {
+    background-color: white;
+    margin-top: 5px;
+    margin-left: 5px;
+    border: 5px solid white;
+    border-radius: 55px;
+    width: 98vw; 
+    height: 85vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0); 
+    transition: box-shadow 0.8s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.box-body:hover {
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.1), 0 0 80px rgba(255, 255, 255, 1);
+}
+
+
+body{
+    background-color: black;
+}
+
+.box {
+    opacity: 1;
+    background-color: black;
+    background-size:contain;
+    margin-left: 5px;
+    border: 5px solid rgb(0, 0, 0);
+    width: 99%;
+    height: 10vh;
+    border-radius:40px;
+    transition: 1.5s;
+    
+}
+
+
+
+@keyframes animdeneuille{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.titre{
+    color: yellow;
+    opacity: 0;
+    animation: animdeneuille 2s ease forwards;
+    text-align: center;
+    font-family: matryx3;
+    font-size: 70px;
+    
+    margin-top: 2.75vh;
+    transition: 1.5s;
+
+}
+
+
+
+
+.box-1 {
+    background-size: cover;
+    position: absolute;
+    border-radius: 60px;
+    text-align: center;
+    width: 40vw;
+    height: 75vh;
+    margin-left: 5vw;
+    background-image: url(box-1_bg.gif);
+    margin-top: 5vh;
+    transition: 1.5s;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+.box-1:hover{
+    border-radius: 200px;
+    transition: 1.5s;
+}
+.box-1:hover .latest-release{
+    color: yellow;
+    transition: 1.5s;
+}
+.box-1 .latest-release{
+    position: absolute;
+    color: white;
+    font-family: matryx4;
+    font-size: 50px;
+    top: 30vh;
+    left: 8vw;
+    transition: 1.5s;
+}
+
+.box-1 a{
+    border-radius: 25px;
+    font-family: matryx4;
+    font-size: 14px;
+    padding: 10px 100px;
+    border: none;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 0 0 20px white;
+    position: absolute;
+    top: 50vh;
+    left: 16vw;
+    transition: 1s;
+}
+.box-1 a:hover{
+    transition: 1s;
+    background-color: yellow;
+}
+.fleche{
+    opacity: 0;
+    color: white;
+    position: absolute;
+    top: 39vh;
+    left: 19.25vw;
+    font-size: 60px;
+    font-family: matryx4;
+    transition: 1s;
+    
+}
+.box-1:hover .fleche{
+    opacity: 1;
+    transition: 1s;
+}
+.box-2 {
+    margin-top: 5vh;
+    position: absolute;
+    right: 5vw;
+    border-radius: 60px;
+    text-align: center;
+    width: 40vw;
+    height: 20vh;
+    background-image: url(box-2_bg.jpg);
+    background-size:auto;
+
+    transition: 1.5s;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+.box-2:hover{
+    border-radius: 100px;
+    transition: 1.5s;
+}
+
+.box-3 {
+    position: absolute;
+    right: 5vw;
+    top: 43vh;
+    border-radius: 60px;
+    text-align: center;
+    width: 40vw;
+    height: 20vh;
+    background-image: url(box-3_bg.png);
+    background-size: 100%;
+    background-position-y: 25%;
+    margin-top: 15px;
+    transition: 1.5s;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+.box-3:hover{
+    border-radius: 100px;
+    transition: 1.5s;
+}
+
+.box-4 {
+    position: absolute;
+    right: 5vw;
+    top: 71vh;
+    border-radius: 60px;
+    text-align: center;
+    width: 40vw;
+    height: 20vh;
+    background-image: url(box-4_bg.gif);
+    margin-top: 15px;
+    transition: 1.5s;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+.box-4:hover{
+    border-radius: 100px;
+    transition: 1.5s;
+}
+
+.petit-titre{
+    opacity: 1;
+    color: white;
+    transition: 1.5s;
+    font-family: matryx4;
+    font-size: 40px;
+}
+
+.petit-titre2{
+    opacity: 1;
+    color: black;
+    transition: 1.5s;
+    font-family: matryx4;
+    font-size: 40px;
+}
+
+.text{
+    color: yellow;
+}
+
+.cs{
+    position: absolute;
+    left: 18.2vw;
+    top: 10vh;
+}
+
+.footer p{
+    color: yellow;
+    font-family: matryx4;
+    text-align: center;
+
+    transition: 1.5s;
+
+    cursor: default;
+}
+
+.box-pwg{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-pwg1{
+    margin-top: 5vh;
+    width: 40vw;
+    height: 60vh;
+    background-color: black;
+    border-radius: 80px;
+    transition: 1.5s ease-in-out;
+    box-shadow: 0 0 20px black;
+   
+}
+.box-pwg1 p{
+    opacity: 0;
+    color: white;
+    text-align: center;
+    font-family: matryx4;
+    font-size: 18px;
+    margin-top: 10vh;
+    transition: 1s;
+
+}
+.box-pwg1:hover{
+    width: 90vw;
+    transition:1.5s ;
+    
+    
+}
+.box-pwg1:hover p{
+    opacity: 1;
+    transition:5s ;
+    
+}
+.yellow{
+    color: yellow;
+}
+.box-body .petit-titre2{
+    text-align: center;
+}
+
+.download{
+    border-radius: 25px;
+    font-family: matryx4;
+    font-size: 14px;
+    padding: 10px 10px;
+    border: none;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 0 0 20px white;
+    position: absolute;
+    bottom: 17vh;
+    left: 47.5vw;
+}
+
+.download:hover {
+    background-color: black;
+    color: white; 
+    transition: 0.5s;
+}
+
+.box-pwg1 .seemore{
+    position: absolute;
+    top: 45vh;
+    left: 41vw;
+    font-size: 80px;
+    color: white;
+    font-family: matryx4;
+    transition: 2s;
+}
+
+.box-pwg1:hover .seemore{
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.box-pwg-image{
+    position: absolute;
+    left: 3vw;
+    top: 25.8vh;
+    width: 25vw;
+    height: 60vh;
+    background-image: url(pwgimage.png);
+    background-position-x: 50%;
+    background-position-y: 10%;
+    transition: 1.5s ease-in-out;
+    border-radius: 80px;
+
+}
+.box-pwg1:hover ~ .box-pwg-image{
+    width: 0vw;
+    height: 0;
+    transition: 1.5s;
+    
+    
+}
+
+
+
+
+
+
