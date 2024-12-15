@@ -22,9 +22,7 @@
             <p class="latest-release">
                 Matryx PasswordGen
             </p>
-            <p class="fleche">
-                ↓
-            </p>
+
             <a href="pwg.html" class="page-link">
                 Go
             </a>
@@ -81,10 +79,14 @@
         document.addEventListener("DOMContentLoaded", () => {
     // Détecter la résolution de l'écran physique
     if (screen.width === 1920 && screen.height === 1080) {
-        // Ajouter une classe spécifique au body
+        // Ajouter une classe spécifique au body pour 1920x1080
         document.body.classList.add("screen-1920x1080");
+    } else if (screen.width === 1280 && screen.height === 720) {
+        // Ajouter une classe spécifique au body pour 1280x720
+        document.body.classList.add("screen-1280x720");
     }
 });
+
 
     </script>
 
