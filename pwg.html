@@ -19,9 +19,9 @@
         <h1 class="petit-titre2">Matryx PasswordGen - v0.1</h1>
         <div class="box-pwg">
             <div class="box-pwg1">
-                <h1 class="seemore">
+                <span class="centrer"><h1 class="seemore">
                     SEE MORE
-                </h1>
+                </h1></span>
                 <p>
                     <span class="yellow">Matryx PasswordGen</span> is a simple tool to generate secure passwords quickly.<br>
                      Whether you need multiple passwords or just one strong password, this tool is perfect for you. <br><br><br>
@@ -40,7 +40,7 @@
                     Passwords are displayed one by one.<br><br><br>
                     <span class="yellow">Matryx PasswordGen - v0.1</span> is ideal for anyone needing secure and unique passwords.
                 </p>
-                <a href="logiciels/Matryx PasswordGen - v0.1.exe" download class="download">Download</a>
+                <span class="centrer"><a href="logiciels/Matryx PasswordGen - v0.1.exe" download class="download">Download</a> </span>
 
             </div>
             <div class="box-pwg-image">
@@ -78,10 +78,15 @@
         document.addEventListener("DOMContentLoaded", () => {
     // Détecter la résolution de l'écran physique
     if (screen.width === 1920 && screen.height === 1080) {
-        // Ajouter une classe spécifique au body
+        // Ajouter une classe spécifique au body pour 1920x1080
         document.body.classList.add("screen-1920x1080");
+    } else if (screen.width === 1280 && screen.height === 720) {
+        // Ajouter une classe spécifique au body pour 1280x720
+        document.body.classList.add("screen-1280x720");
     }
 });
+
+
 
     </script>
     
