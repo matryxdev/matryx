@@ -22,6 +22,8 @@
     background-color: white;
 }
 
+
+
 a{
     text-decoration: none;
 }
@@ -32,9 +34,8 @@ body {
 }
 
 body::-webkit-scrollbar {
-    display: none;
+    display: none; 
 }
-
 
 body.screen-1920x1080 .box-1 {
     width: 40vw;
@@ -54,10 +55,8 @@ body.screen-1920x1080 .box-1:hover .latest-release {
     color: yellow;
 }
 
-body.screen-1920x1080 .box-1:hover .fleche {
-    transition: opacity 1.5s;
 
-}
+
 body.screen-1920x1080 .box-2:hover,
 body.screen-1920x1080 .box-3:hover,
 body.screen-1920x1080 .box-4:hover {
@@ -72,12 +71,7 @@ body.screen-1920x1080 .box-1 .latest-release {
     transition: font-size 0.5s ease, top 0.5s ease, left 0.5s ease;
 }
 
-body.screen-1920x1080 .box-1 .fleche {
-    font-size: 30.5px;
-    left: 15vw;
-    top: 35vh;
-    transition: font-size 0.5s ease, left 0.5s ease, top 0.5s ease;
-}
+
 
 body.screen-1920x1080 .box-1 a {
     font-size: 10.5px;
@@ -106,12 +100,81 @@ body.screen-1920x1080 .box-pwg1 .seemore {
     transition: opacity 1s;
 }
 
-body.screen-1920x1080 .box-1 .fleche {
-    font-size: 30.5px;  
-    left: 20vw;
-    top: 35vh;
-    transition: 0s;
+
+
+
+
+
+body.screen-1280x720 .titre{
+    font-size: 40px;
 }
+
+body.screen-1280x720 .download{
+    margin-top: 15px;
+    padding: 5px 40px;
+    font-size: 10px;
+}
+
+body.screen-1280x720 .box-1 {
+    width: 40vw; 
+    height: 75vh;
+    transition: width 0.5s ease, height 0.5s ease, border-radius 1.5s ease;
+}
+
+body.screen-1280x720 .box-1:hover {
+    border-radius: 80px; 
+    transition: border-radius 1.5s ease; 
+}
+
+body.screen-1280x720 .box-1:hover .latest-release {
+    transition: color 1.5s;
+    color: yellow;
+}
+
+
+body.screen-1280x720 .box-2:hover,
+body.screen-1280x720 .box-3:hover,
+body.screen-1280x720 .box-4:hover {
+    transition: border-radius 2s;
+}
+
+body.screen-1280x720 .box-1 .latest-release {
+    font-size: 15px; 
+    top: 18vh; 
+    left: 12vw;
+    transition: font-size 0.5s ease, top 0.5s ease, left 0.5s ease;
+}
+
+
+
+body.screen-1280x720 .box-1 a {
+    font-size: 8.5px;
+    padding: 2px 30px;
+    transition: font-size 0.5s ease, left 0.5s ease;
+}
+
+body.screen-1280x720 .footer p {
+    font-size: 10px; 
+    transition: font-size 0.5s ease;
+}
+
+body.screen-1280x720 .petit-titre, 
+body.screen-1280x720 .petit-titre2 {
+    font-size: 15px; 
+    transition: font-size 0.5s ease;
+}
+
+body.screen-1280x720 .box-pwg1 p {
+    font-size: 7px; 
+    transition: opacity 1.5s;
+}
+
+body.screen-1280x720 .box-pwg1 .seemore {
+    font-size: 45px; 
+    transition: opacity 1s;
+}
+
+
 
 
 
@@ -224,13 +287,13 @@ body{
     transition: 1.5s;
 }
 .box-1 .latest-release{
-    position: absolute;
+
     color: white;
     font-family: matryx4;
     font-size: 50px;
-    top: 30vh;
-    left: 8vw;
+    text-align: center;
     transition: 1.5s;
+    margin-top: 20vh;
 }
 
 .box-1 a{
@@ -245,30 +308,17 @@ body{
     cursor: pointer;
     transition: 0.5s;
     box-shadow: 0 0 20px white;
-    position: absolute;
-    top: 50vh;
-    left: 16vw;
+    justify-content: center;
+    align-items: center;
+
     transition: 1s;
 }
 .box-1 a:hover{
     transition: 1s;
     background-color: yellow;
 }
-.fleche{
-    opacity: 0;
-    color: white;
-    position: absolute;
-    top: 39vh;
-    left: 19.25vw;
-    font-size: 60px;
-    font-family: matryx4;
-    transition: 1s;
-    
-}
-.box-1:hover .fleche{
-    opacity: 1;
-    transition: 1s;
-}
+
+
 .box-2 {
     margin-top: 5vh;
     position: absolute;
@@ -423,10 +473,14 @@ body{
     transition: 0.5s;
     box-shadow: 0 0 20px white;
     position: absolute;
-    bottom: 17vh;
-    left: 47.5vw;
-}
+    top: 80vh;
 
+}
+.centrer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .download:hover {
     background-color: black;
     color: white; 
@@ -434,9 +488,8 @@ body{
 }
 
 .box-pwg1 .seemore{
+    top: 40%;
     position: absolute;
-    top: 45vh;
-    left: 41vw;
     font-size: 80px;
     color: white;
     font-family: matryx4;
@@ -459,6 +512,7 @@ body{
     background-position-y: 10%;
     transition: 1.5s ease-in-out;
     border-radius: 80px;
+    box-shadow: 0 0 20px black;
 
 }
 .box-pwg1:hover ~ .box-pwg-image{
