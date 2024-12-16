@@ -93,7 +93,12 @@ body::-webkit-scrollbar {
 
 
     .box-pwg1 {
-        display: none; 
+        position: relative;
+        width: 70vw; 
+        height: auto;
+        margin: 5vh auto; 
+        border-radius: 20px; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
     }
 
     .box-pwg1 p {
