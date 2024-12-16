@@ -46,8 +46,8 @@ body::-webkit-scrollbar {
         width: 100% !important; 
         box-sizing: border-box !important; 
     }
-    .box-body{
-        width:96vw !important;
+    .box-body {
+        width: 96vw !important;
     }
     .box-1,
     .box-2,
@@ -61,43 +61,41 @@ body::-webkit-scrollbar {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
     }
 
-
-        
-    .box-1 a{
+    .box-1 a {
         padding: 5px 10px !important;
         font-size: 2.5vw !important;
         box-shadow: none; 
         top: auto;
         position: relative;
-        margin: 20px auto;}
-    
+        margin: 20px auto;
+    }
+
     .box-1 .latest-release {
         font-size: 4vw !important; 
         margin-top: 2vh; 
     }
-    .cs{
+
+    .cs {
         font-size: 1.5vw !important;
-        text-align:center !important;
+        text-align: center !important;
     }
+
     .petit-titre,
     .petit-titre2 {
         font-size: 3vw !important;
         text-align: center !important;
-        margin-top:4vh !important;
+        margin-top: 4vh !important;
     }
 
     .download {
-        display:none;
+        display: none;
     }
+
 
     .box-pwg1 {
-        visibility:hidden;
-    }
-
-
-    .box-pwg1 .seemore {
         display: none; 
     }
+
     .box-pwg1 p {
         display: none; 
     }
@@ -116,6 +114,7 @@ body::-webkit-scrollbar {
         display: none; 
     }
 }
+
 
 
 
