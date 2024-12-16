@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Matryx | Accueil</title>
+</head>
+<body class="page-transition">
+    <header>
+        <div class="box">
+            <a href="index.html" class="page-link"><h1 class="titre">
+                MATRYX
+            </h1></a>
+        </div>
+    </header>
+    <div class="box-body">
+      <h1 class="petit-titre2">CONTACT ME</h1>
+      <div class="contact-me">
+
+        <div class="e-mail">
+          <h1 class="contact-txt">E-MAIL</h1>
+          <p class="contact-txt-after">matryx.dev@gmail.com</p>
+        </div>
+        <div class="discord">
+          <h1 class="contact-txt">DISCORD</h1>
+          <p class="contact-txt-after">@notmatryx</p>
+        </div>
+        <div class="instagram">
+          <h1 class="contact-txt">INSTAGRAM</h1>
+          <p class="contact-txt-after">Coming soon ...</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+        // Quand la page est complètement chargée, ajouter l'animation fade-in
+        window.addEventListener('load', function () {
+            document.body.classList.remove('page-transition');  // Supprimer la classe de transition initiale
+            document.body.classList.add('page-loaded');  // Appliquer fade-in après le chargement complet
+        });
+
+        // Fonction pour animer avant de changer de page
+        const pageLinks = document.querySelectorAll('.page-link');
+
+        pageLinks.forEach(link => {
+            link.addEventListener('click', function (event) {
+                event.preventDefault(); // Empêche la navigation immédiate
+                document.body.classList.remove('page-loaded');  // Enlever fade-in
+                document.body.classList.add('fade-out');  // Appliquer fade-out
+                
+                // Attendre que l'animation se termine avant de rediriger
+                setTimeout(() => {
+                    window.location.href = link.href; // Rediriger après l'animation
+                }, 500); // 500ms correspond à la durée de l'animation fade-out
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+    // Détecter la résolution de l'écran physique
+    if (screen.width === 1920 && screen.height === 1080) {
+        // Ajouter une classe spécifique au body pour 1920x1080
+        document.body.classList.add("screen-1920x1080");
+    } else if (screen.width === 1280 && screen.height === 720) {
+        // Ajouter une classe spécifique au body pour 1280x720
+        document.body.classList.add("screen-1280x720");
+    }
+});
+
+
+    </script>
+
+    
+
+    <footer class="footer"><p>Matryx - 2024</p></footer>
+</body>
+</html>
