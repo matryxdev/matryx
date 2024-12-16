@@ -87,12 +87,7 @@ body::-webkit-scrollbar {
     }
 
     .download {
-        padding: 5px 20px;
-        font-size: 2.5vw !important;
-        box-shadow: none; 
-        top: auto;
-        position: relative; 
-        margin: 20px auto;
+        display:none;
     }
 
     .box-pwg1 {
@@ -111,6 +106,18 @@ body::-webkit-scrollbar {
 
     .box-pwg1 .seemore {
         display: none; 
+    }
+    .box-pwg1 p {
+        display: none; 
+    }
+
+    .box-pwg1::before {
+        content: "Not Available on your device"; 
+        display: block;
+        font-size: 3vw;
+        text-align: center; 
+        color: #333;
+        margin-top: 5vh; 
     }
 
     .box-pwg-image {
