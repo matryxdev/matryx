@@ -92,14 +92,14 @@ body::-webkit-scrollbar {
     }
 
     .seemore{{
-        display:none;}
+        display:none !important;}
     .box-pwg1 {
-        position: relative !important;
-        width: 70vw !important; 
-        height: 50vh !important;
-        margin: 5vh auto !important; 
-        border-radius: 20px !important; 
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) !important; 
+        width: 40vw  !important;  
+        height: 60vh !important;
+        background-color: black !important;
+        border-radius: 80px !important;
+        box-shadow: 0 0 20px black !important;
+        transition: none !important; 
     }
 
     .box-pwg1 p {
@@ -117,7 +117,7 @@ body::-webkit-scrollbar {
     }
 
     .box-pwg-image {
-        display: none; 
+        display: none !important;
     }
 }
 
