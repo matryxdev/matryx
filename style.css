@@ -63,7 +63,10 @@ body::-webkit-scrollbar {
         font-size: 4vw !important; /* Taille de police adaptable */
         margin-top: 2vh; /* Espacement ajusté */
     }
-
+    .cs{
+        font-size: 1vw !important;
+        text-align:center !important;
+    }
     .petit-titre,
     .petit-titre2 {
         font-size: 2vw !important; /* Réduction dynamique de la taille */
