@@ -51,7 +51,7 @@ body::-webkit-scrollbar {
 
     /* Titres et textes */
     .titre, .latest-release, .petit-titre, .petit-titre2 {
-        font-size: 1.5em; /* Police plus petite pour téléphone */
+        font-size: 0.5em; /* Police plus petite pour téléphone */
         text-align: center; /* Alignement central */
     }
 
