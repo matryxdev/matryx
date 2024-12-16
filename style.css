@@ -112,8 +112,9 @@ body::-webkit-scrollbar {
         font-size: 5vw;
         text-align: center; 
         color: white;
-        margin-top: 15vh; 
+        margin-top: 50%; 
         font-family: matryx4;
+        padding:10px;
     }
 
     .box-pwg-image {
