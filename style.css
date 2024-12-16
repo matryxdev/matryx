@@ -91,18 +91,9 @@ body::-webkit-scrollbar {
     }
 
     .box-pwg1 {
-        width: 90vw;
-        height: auto;
-        margin: 10px auto;
-        border-radius: 30px;
-        box-shadow: none;
+     display:none;
     }
 
-    .box-pwg1 p {
-        font-size: 3vw !important;
-        margin-top: 5vh;
-        opacity: 1;
-    }
 
     .box-pwg1 .seemore {
         display: none; 
@@ -114,10 +105,11 @@ body::-webkit-scrollbar {
     .box-pwg1::before {
         content: "Not Available on your device"; 
         display: block;
-        font-size: 3vw;
+        font-size: 5vw;
         text-align: center; 
-        color: #333;
-        margin-top: 5vh; 
+        color: black;
+        margin-top: 15vh; 
+        font-family: matryx4;
     }
 
     .box-pwg-image {
