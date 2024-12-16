@@ -39,11 +39,12 @@ body::-webkit-scrollbar {
 
 
 @media screen and (max-width: 768px) {
-    body {
-        overflow-x: hidden !important; /* Empêche le scroll horizontal */
-        margin: 0 !important; /* Évite les marges par défaut */
+    html, body {
+        overflow-x: hidden !important; /* Désactive le scroll horizontal */
+        margin: 0 !important; /* Enlève les marges par défaut */
         padding: 0 !important;
-
+        width: 100% !important; /* Empêche les débordements */
+        box-sizing: border-box !important; /* Prend en compte le padding et la bordure dans la largeur */
     }
     .box-body{
         width:96vw !important;
