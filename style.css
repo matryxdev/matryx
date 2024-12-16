@@ -61,11 +61,7 @@ body::-webkit-scrollbar {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
     }
 
-    .box-1 p{     display: flex; 
-    justify-content: center;
-    align-items: center; 
-    text-align: center; 
-    }
+
         
     .box-1 a{
         padding: 5px 10px !important;
@@ -80,7 +76,7 @@ body::-webkit-scrollbar {
         margin-top: 2vh; 
     }
     .cs{
-        font-size: 2vw !important;
+        font-size: 1.5vw !important;
         text-align:center !important;
     }
     .petit-titre,
@@ -488,9 +484,7 @@ body{
 }
 
 .cs{
-    position: absolute;
-    left: 18.2vw;
-    top: 10vh;
+    text-align:center
 }
 
 .footer p{
