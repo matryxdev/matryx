@@ -37,6 +37,18 @@ body::-webkit-scrollbar {
     display: none; 
 }
 
+
+@media screen and (max-width: 720px) {
+    /* Ajustement des conteneurs principaux */
+    .box-1, .box-2, .box-3, .box-4, .box-pwg1, .box-pwg-image {
+        width: 90vw; /* Prend presque toute la largeur */
+        height: auto; /* Hauteur ajustée automatiquement */
+        margin: 5vw auto; /* Centre les éléments horizontalement */
+        border-radius: 20px; /* Coins moins arrondis */
+    }
+
+
+
 body.screen-1920x1080 .box-1 {
     width: 40vw;
     height: 75vh;
