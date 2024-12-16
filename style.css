@@ -91,7 +91,7 @@ body::-webkit-scrollbar {
         display: none;
     }
 
-    .seemore{{
+    .seemore{
         display:none !important;}
     .box-pwg1 {
         width: 40vw  !important;  
