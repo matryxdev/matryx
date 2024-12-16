@@ -44,7 +44,7 @@ body::-webkit-scrollbar {
     }
     .box-body{
         width:98vw !important;
-        margin-left:1vw
+        margin-left:1vw !important;
     }
     .box-1,
     .box-2,
@@ -58,7 +58,7 @@ body::-webkit-scrollbar {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Ombre réduite */
     }
     .box-1 a{
-        transform:scale(0.5);}
+        transform:scale(0.5) !important;}
     .box-1 .latest-release {
         font-size: 4vw !important; /* Taille de police adaptable */
         margin-top: 2vh; /* Espacement ajusté */
