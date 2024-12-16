@@ -26,6 +26,7 @@
 
 a{
     text-decoration: none;
+    color: black;
 }
 
 
@@ -76,7 +77,7 @@ body::-webkit-scrollbar {
     }
 
     .cs {
-        font-size: 1.5vw !important;
+        font-size: 0.8em !important;
         text-align: center !important;
     }
 
@@ -407,6 +408,10 @@ body{
     background-color: yellow;
 }
 
+.box-1:hover h1{
+    color: yellow;
+    transition: 1.5s;
+}
 
 .box-2 {
     margin-top: 5vh;
@@ -425,6 +430,11 @@ body{
 
 .box-2:hover{
     border-radius: 100px;
+    transition: 1.5s;
+}
+
+.box-2:hover h1{
+    color: yellow;
     transition: 1.5s;
 }
 
@@ -449,6 +459,11 @@ body{
     transition: 1.5s;
 }
 
+.box-3:hover h1{
+    color: yellow;
+    transition: 1.5s;
+}
+
 .box-4 {
     position: absolute;
     right: 5vw;
@@ -465,6 +480,11 @@ body{
 
 .box-4:hover{
     border-radius: 100px;
+    transition: 1.5s;
+}
+
+.box-4:hover h1{
+    color: yellow;
     transition: 1.5s;
 }
 
@@ -629,7 +649,145 @@ body{
 }
 
 
+.contact-me {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    height: 70vh; 
+}
+
+.contact-txt{
+    color: white;
+    font-family: matryx4;
+    transition: 1.5s ease-in-out;
+}
+
+.e-mail, .discord, .instagram {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+    border-radius: 60px;
+    margin: 10px;
+    background-color: black;
+    width: 60vw;
+    height: 20vh;
+    box-shadow: 0 0 20px black;
+    transition: 2s ease-in-out;
+}
 
 
+.e-mail:hover,
+.discord:hover,
+.instagram:hover{
+    transition: 2s ease-in-out;
+    width: 10vw;
+}
 
+.e-mail:hover .contact-txt,
+.discord:hover .contact-txt,
+.instagram:hover .contact-txt{
+    opacity: 0;
+    transition: 1.5s ;
+}
+
+.contact-btn {
+    color: black;
+    background-color: white;
+    padding: 5px 10px;
+    display: inline-block;  
+    border-radius: 40px;     
+    border: 1px solid black;
+    text-decoration: none;  
+    font-family: matryx4;
+    transition:1s !important;
+}
+
+.contact-btn:hover{
+    transition: 1s !important ;
+    padding: 5px 100px;
+
+}
+
+.contact-txt{
+    font-size: 1em;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 1.5s;
+    font-family: matryx4;
+    color: white;
+}
+.contact-txt-after{
+    font-size: 0.8em;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 1s !important;
+    font-family: matryx4;
+    color: white;
+}
+.contact-txt-after {
+    opacity: 0; 
+}
+
+.e-mail:hover .contact-txt,
+.discord:hover .contact-txt,
+.instagram:hover .contact-txt {
+    opacity: 0; 
+}
+
+.e-mail:hover .contact-txt-after,
+.discord:hover .contact-txt-after,
+.instagram:hover .contact-txt-after {
+    transition: 5s !important;
+    opacity: 1; 
+}
+
+.contact-txt-after:hover{
+    cursor: default;
+    color: yellow;
+    transition: 1.5s;
+}
+
+@media screen and (max-width: 768px) {
+    .e-mail, .discord, .instagram {
+        width: 90%; /* Boîtes prennent toute la largeur */
+        height: 15vh; /* Hauteur réduite */
+        border-radius: 30px; /* Moins d'arrondi */
+        transition: none;
+    }
+
+    .contact-txt, .contact-txt-after {
+        font-size: 4vw; /* Texte flexible en fonction de l'écran */
+    }
+
+    .e-mail:hover, .discord:hover, .instagram:hover {
+        width: 90%; 
+        transition: none;
+    }
+
+    .e-mail:hover .contact-txt,
+    .discord:hover .contact-txt,
+    .instagram:hover .contact-txt {
+        opacity: 1; /* Texte toujours visible */
+    }
+    .contact-txt-after {
+        opacity: 1; 
+        top: 65%;
+        font-size: 0.8em;
+        color: yellow;
+    }
+    .contact-btn{
+        font-size: 1em !important;
+    }
+    .contact-btn:hover{
+        padding: 5px 10px;
+    }
+}
 
