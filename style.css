@@ -39,7 +39,7 @@ body::-webkit-scrollbar {
 
 
 /* Media query spécifique pour téléphone (écrans inférieurs à 720px) */
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1300px) {
     /* Ajustement des boîtes */
     .box-1, .box-2, .box-3, .box-4, .box-pwg1, .box-pwg-image {
         width: 95vw; /* Prend presque toute la largeur */
