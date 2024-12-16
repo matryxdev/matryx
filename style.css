@@ -47,7 +47,7 @@ body::-webkit-scrollbar {
         width: 100%;
     }
     .box-body{
-        width:98vw !important;
+        width:97vw !important;
     }
     .box-1,
     .box-2,
@@ -74,6 +74,7 @@ body::-webkit-scrollbar {
     .petit-titre2 {
         font-size: 3vw !important; /* Réduction dynamique de la taille */
         text-align: center !important;
+        margin-top:1vh !important;
     }
 
     .download {
