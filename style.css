@@ -40,10 +40,10 @@ body::-webkit-scrollbar {
 
 @media screen and (max-width: 768px) {
     body {
-        overflow: auto; 
+        overflow: auto !important; 
     }
     .box-body{
-        width:80vw !important;
+        width:98vw !important;
     }
     .box-1,
     .box-2,
@@ -58,14 +58,14 @@ body::-webkit-scrollbar {
     }
 
     .box-1 .latest-release {
-        font-size: 0.1vw !important; /* Taille de police adaptable */
+        font-size: 4vw !important; /* Taille de police adaptable */
         margin-top: 2vh; /* Espacement ajusté */
     }
 
     .petit-titre,
     .petit-titre2 {
-        font-size: 0.5vw !important; /* Réduction dynamique de la taille */
-        text-align: center;
+        font-size: 2vw !important; /* Réduction dynamique de la taille */
+        text-align: center !important;
     }
 
     .download {
