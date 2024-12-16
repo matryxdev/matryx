@@ -61,18 +61,20 @@ body::-webkit-scrollbar {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Ombre réduite */
     }
     .box-1 a{
-        transform:scale(0.5) !important;}
+       padding: 5px 20px;
+        font-size: 2.5vw !important;
+        box-shadow: none; /* Simplification pour la performance */
+        top: auto;
+        position: relative; /* Correction de la position */
+        margin: 20px auto;}
+    
     .box-1 .latest-release {
         font-size: 4vw !important; /* Taille de police adaptable */
         margin-top: 2vh; /* Espacement ajusté */
     }
     .cs{
-        padding: 5px 20px;
-        font-size: 2.5vw !important;
-        box-shadow: none; /* Simplification pour la performance */
-        top: auto;
-        position: relative; /* Correction de la position */
-        margin: 20px auto;
+        font-size: 2vw !important;
+        text-align:center !important;
     }
     .petit-titre,
     .petit-titre2 {
