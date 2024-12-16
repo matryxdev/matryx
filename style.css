@@ -91,14 +91,15 @@ body::-webkit-scrollbar {
         display: none;
     }
 
-
+    .seemore{{
+        display:none;}
     .box-pwg1 {
-        position: relative;
-        width: 70vw; 
-        height: auto;
-        margin: 5vh auto; 
-        border-radius: 20px; 
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+        position: relative !important;
+        width: 70vw !important; 
+        height: 50vh !important;
+        margin: 5vh auto !important; 
+        border-radius: 20px !important; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) !important; 
     }
 
     .box-pwg1 p {
@@ -110,7 +111,7 @@ body::-webkit-scrollbar {
         display: block;
         font-size: 5vw;
         text-align: center; 
-        color: black;
+        color: white;
         margin-top: 15vh; 
         font-family: matryx4;
     }
