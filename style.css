@@ -44,7 +44,6 @@ body::-webkit-scrollbar {
     }
     .box-body{
         width:98vw !important;
-        margin-left:1vw !important;
     }
     .box-1,
     .box-2,
