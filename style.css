@@ -39,74 +39,67 @@ body::-webkit-scrollbar {
 
 
 /* Media query spécifique pour téléphone (écrans inférieurs à 720px) */
-@media screen and (max-width: 720px) {
-    /* Ajustement des boîtes */
-    .box-1, .box-2, .box-3, .box-4, .box-pwg1, .box-pwg-image {
-        width: 95vw; /* Prend presque toute la largeur */
-        height: auto; /* Ajustement automatique de la hauteur */
-        margin: 3vh auto; /* Centre les boîtes */
-        border-radius: 20px; /* Coins plus légers */
-        box-shadow: none; /* Suppression des ombres pour mobile */
+/* Optimisation pour les téléphones (écrans <= 768px) */
+@media screen and (max-width: 768px) {
+    body {
+        overflow: auto; /* Pour éviter les bugs d'affichage */
     }
 
-    /* Titres et textes */
-    .titre, .latest-release, .petit-titre, .petit-titre2 {
-        font-size: 0.5em; /* Police plus petite pour téléphone */
-        text-align: center; /* Alignement central */
-    }
-
-    .latest-release {
-        margin-top: 10vh; /* Réduction de l'espacement vertical */
-    }
-
-    /* Ajustement des paragraphes */
-    .box-pwg1 p {
-        font-size: 12px;
-        margin-top: 3vh;
-    }
-
-    /* Bouton Download */
-    .download {
-        font-size: 12px; /* Texte plus petit */
-        padding: 8px 20px;
+    .box-1,
+    .box-2,
+    .box-3,
+    .box-4 {
         position: relative;
-        top: auto; /* Ajuste pour supprimer la position fixe */
-        margin: 20px auto; /* Centre le bouton */
+        width: 90vw; /* Largeur à 90% de l’écran */
+        height: auto; /* Hauteur ajustable */
+        margin: 5vh auto; /* Centrage vertical et horizontal */
+        border-radius: 20px; /* Arrondis plus doux */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Ombre réduite */
     }
 
-    /* Image de décoration PWG */
+    .box-1 .latest-release {
+        font-size: 5vw; /* Taille de police adaptable */
+        margin-top: 2vh; /* Espacement ajusté */
+    }
+
+    .petit-titre,
+    .petit-titre2 {
+        font-size: 4vw; /* Réduction dynamique de la taille */
+        text-align: center;
+    }
+
+    .download {
+        padding: 5px 20px;
+        font-size: 3.5vw;
+        box-shadow: none; /* Simplification pour la performance */
+        top: auto;
+        position: relative; /* Correction de la position */
+        margin: 20px auto;
+    }
+
+    .box-pwg1 {
+        width: 90vw;
+        height: auto;
+        margin: 10px auto;
+        border-radius: 30px;
+        box-shadow: none;
+    }
+
+    .box-pwg1 p {
+        font-size: 4vw;
+        margin-top: 5vh;
+        opacity: 1;
+    }
+
+    .box-pwg1 .seemore {
+        display: none; /* Cache l’élément sur mobile */
+    }
+
     .box-pwg-image {
-        display: none; /* Cacher l'image décorative pour gagner de l'espace */
-    }
-
-    /* Espacements et transitions plus simples */
-    .box-body, .centrer {
-        display: flex;
-        flex-direction: column; /* Alignement vertical */
-        align-items: center; /* Centre horizontalement */
-    }
-
-    /* Suppression des transitions lourdes */
-    .box-1:hover, .box-2:hover, .box-3:hover, .box-4:hover {
-        border-radius: 20px; /* Pas d’animations complexes sur téléphone */
-        transition: none; /* Désactive les transitions */
-    }
-
-    .box-pwg1:hover {
-        width: 95vw; /* Pas de changement de taille exagéré */
-        transition: none;
-    }
-
-    /* Texte "Seemore" */
-    .seemore {
-        font-size: 30px; /* Taille plus petite pour mobile */
-    }
-
-    /* Pied de page */
-    .footer p {
-        font-size: 10px; /* Ajustement du texte */
+        display: none; /* Cache l'image pour optimiser l’espace */
     }
 }
+
 
 
 
