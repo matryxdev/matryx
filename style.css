@@ -44,14 +44,14 @@ body::-webkit-scrollbar {
         font-size: 3vw;
     }
     .box-body{
-        width:90vw;
+        width:80vw;
     }
     .box-1,
     .box-2,
     .box-3,
     .box-4 {
         position: relative;
-        width: 90vw; 
+        width: 70vw; 
         height: auto; /* Hauteur ajustable */
         margin: 5vh auto; /* Centrage vertical et horizontal */
         border-radius: 20px; /* Arrondis plus doux */
@@ -59,7 +59,7 @@ body::-webkit-scrollbar {
     }
 
     .box-1 .latest-release {
-        font-size: 1vw; /* Taille de police adaptable */
+        font-size: 0.1vw; /* Taille de police adaptable */
         margin-top: 2vh; /* Espacement ajusté */
     }
 
