@@ -40,7 +40,6 @@ body::-webkit-scrollbar {
 
 @media screen and (max-width: 768px) {
     body {
-        overflow: auto !important; 
         overflow-x: hidden !important; /* Empêche le scroll horizontal */
         margin: 0 !important; /* Évite les marges par défaut */
         padding: 0 !important;
