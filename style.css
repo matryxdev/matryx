@@ -38,11 +38,10 @@ body::-webkit-scrollbar {
 }
 
 
-/* Media query spécifique pour téléphone (écrans inférieurs à 720px) */
-/* Optimisation pour les téléphones (écrans <= 768px) */
 @media screen and (max-width: 768px) {
     body {
-        overflow: auto; /* Pour éviter les bugs d'affichage */
+        overflow: auto; 
+        font-size: 3vw;
     }
 
     .box-1,
@@ -50,7 +49,7 @@ body::-webkit-scrollbar {
     .box-3,
     .box-4 {
         position: relative;
-        width: 90vw; /* Largeur à 90% de l’écran */
+        width: 90vw; 
         height: auto; /* Hauteur ajustable */
         margin: 5vh auto; /* Centrage vertical et horizontal */
         border-radius: 20px; /* Arrondis plus doux */
@@ -58,7 +57,7 @@ body::-webkit-scrollbar {
     }
 
     .box-1 .latest-release {
-        font-size: 5vw; /* Taille de police adaptable */
+        font-size: 4vw; /* Taille de police adaptable */
         margin-top: 2vh; /* Espacement ajusté */
     }
 
@@ -86,7 +85,7 @@ body::-webkit-scrollbar {
     }
 
     .box-pwg1 p {
-        font-size: 4vw;
+        font-size: 3vw;
         margin-top: 5vh;
         opacity: 1;
     }
