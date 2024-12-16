@@ -179,6 +179,75 @@ body.screen-1920x1080 .box-pwg1 .seemore {
 
 
 
+body.screen-1280x720 .titre{
+    font-size: 40px;
+}
+
+body.screen-1280x720 .download{
+    margin-top: 15px;
+    padding: 5px 40px;
+    font-size: 10px;
+}
+
+body.screen-1280x720 .box-1 {
+    width: 40vw; 
+    height: 75vh;
+    transition: width 0.5s ease, height 0.5s ease, border-radius 1.5s ease;
+}
+
+body.screen-1280x720 .box-1:hover {
+    border-radius: 80px; 
+    transition: border-radius 1.5s ease; 
+}
+
+body.screen-1280x720 .box-1:hover .latest-release {
+    transition: color 1.5s;
+    color: yellow;
+}
+
+
+body.screen-1280x720 .box-2:hover,
+body.screen-1280x720 .box-3:hover,
+body.screen-1280x720 .box-4:hover {
+    transition: border-radius 2s;
+}
+
+body.screen-1280x720 .box-1 .latest-release {
+    font-size: 15px; 
+    top: 18vh; 
+    left: 12vw;
+    transition: font-size 0.5s ease, top 0.5s ease, left 0.5s ease;
+}
+
+
+
+body.screen-1280x720 .box-1 a {
+    font-size: 8.5px;
+    padding: 2px 30px;
+    transition: font-size 0.5s ease, left 0.5s ease;
+}
+
+body.screen-1280x720 .footer p {
+    font-size: 10px; 
+    transition: font-size 0.5s ease;
+}
+
+body.screen-1280x720 .petit-titre, 
+body.screen-1280x720 .petit-titre2 {
+    font-size: 15px; 
+    transition: font-size 0.5s ease;
+}
+
+body.screen-1280x720 .box-pwg1 p {
+    font-size: 7px; 
+    transition: opacity 1.5s;
+}
+
+body.screen-1280x720 .box-pwg1 .seemore {
+    font-size: 45px; 
+    transition: opacity 1s;
+}
+
 
 
 
