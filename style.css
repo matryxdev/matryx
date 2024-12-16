@@ -41,6 +41,10 @@ body::-webkit-scrollbar {
 @media screen and (max-width: 768px) {
     body {
         overflow: auto !important; 
+        overflow-x: hidden; /* Empêche le scroll horizontal */
+        margin: 0; /* Évite les marges par défaut */
+        padding: 0;
+        width: 100%;
     }
     .box-body{
         width:98vw !important;
@@ -63,12 +67,12 @@ body::-webkit-scrollbar {
         margin-top: 2vh; /* Espacement ajusté */
     }
     .cs{
-        font-size: 1vw !important;
+        font-size: 2vw !important;
         text-align:center !important;
     }
     .petit-titre,
     .petit-titre2 {
-        font-size: 2vw !important; /* Réduction dynamique de la taille */
+        font-size: 3vw !important; /* Réduction dynamique de la taille */
         text-align: center !important;
     }
 
