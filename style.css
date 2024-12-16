@@ -40,11 +40,11 @@ body::-webkit-scrollbar {
 
 @media screen and (max-width: 768px) {
     html, body {
-        overflow-x: hidden !important; /* Désactive le scroll horizontal */
-        margin: 0 !important; /* Enlève les marges par défaut */
+        overflow-x: hidden !important; 
+        margin: 0 !important; 
         padding: 0 !important;
-        width: 100% !important; /* Empêche les débordements */
-        box-sizing: border-box !important; /* Prend en compte le padding et la bordure dans la largeur */
+        width: 100% !important; 
+        box-sizing: border-box !important; 
     }
     .box-body{
         width:96vw !important;
@@ -55,22 +55,29 @@ body::-webkit-scrollbar {
     .box-4 {
         position: relative;
         width: 70vw; 
-        height: auto; /* Hauteur ajustable */
-        margin: 5vh auto; /* Centrage vertical et horizontal */
-        border-radius: 20px; /* Arrondis plus doux */
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Ombre réduite */
+        height: auto;
+        margin: 5vh auto; 
+        border-radius: 20px; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
     }
+
+    .box-1 p{     display: flex; 
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+    }
+        
     .box-1 a{
         padding: 5px 10px !important;
         font-size: 2.5vw !important;
-        box-shadow: none; /* Simplification pour la performance */
+        box-shadow: none; 
         top: auto;
-        position: relative; /* Correction de la position */
+        position: relative;
         margin: 20px auto;}
     
     .box-1 .latest-release {
-        font-size: 4vw !important; /* Taille de police adaptable */
-        margin-top: 2vh; /* Espacement ajusté */
+        font-size: 4vw !important; 
+        margin-top: 2vh; 
     }
     .cs{
         font-size: 2vw !important;
@@ -78,7 +85,7 @@ body::-webkit-scrollbar {
     }
     .petit-titre,
     .petit-titre2 {
-        font-size: 3vw !important; /* Réduction dynamique de la taille */
+        font-size: 3vw !important;
         text-align: center !important;
         margin-top:4vh !important;
     }
@@ -86,9 +93,9 @@ body::-webkit-scrollbar {
     .download {
         padding: 5px 20px;
         font-size: 2.5vw !important;
-        box-shadow: none; /* Simplification pour la performance */
+        box-shadow: none; 
         top: auto;
-        position: relative; /* Correction de la position */
+        position: relative; 
         margin: 20px auto;
     }
 
@@ -107,11 +114,11 @@ body::-webkit-scrollbar {
     }
 
     .box-pwg1 .seemore {
-        display: none; /* Cache l’élément sur mobile */
+        display: none; 
     }
 
     .box-pwg-image {
-        display: none; /* Cache l'image pour optimiser l’espace */
+        display: none; 
     }
 }
 
